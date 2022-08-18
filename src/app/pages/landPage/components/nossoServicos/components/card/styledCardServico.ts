@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerCardServico = styled.div`
     width: 310px;
-    height: 380px;
+    height: 340px;
     border-radius: 20px;
     border: 3px solid #3A6EA5;
     display: flex;

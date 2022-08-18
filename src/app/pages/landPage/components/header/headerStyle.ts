@@ -5,9 +5,10 @@ export const Container = styled.div`
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     cursor: pointer;
     margin-top: 30px;
+    
     .logo-topline{
         font-size: 40px;
         font-weight: 700;
@@ -16,10 +17,12 @@ export const Container = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-left:20px
     }
     .button-header{
         width: 380px;
         display: flex;
         justify-content:space-between;
+        margin-right: 20px;
     }
 `;

@@ -1,6 +1,9 @@
 import { Header } from "./components/header"
 import { Inicio } from "./components/inicio"
+import { MotivosViajar } from "./components/motivosViajar"
 import { Servicos } from "./components/nossoServicos"
+import { TopPaises } from "./components/paises"
+import { PontosTuristico } from "./components/pontosTuristicos"
 import { ContainerLandPage } from "./styleLandPage"
 
 export const LandPage = ()=>{
@@ -9,6 +12,9 @@ export const LandPage = ()=>{
             <Header />
             <Inicio />
             <Servicos />
+            <TopPaises />
+            <MotivosViajar />
+            <PontosTuristico />
         </ContainerLandPage>
     )
 }
