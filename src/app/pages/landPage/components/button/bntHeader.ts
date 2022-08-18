@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const ContainerBnt = styled.div`
-    width: 180px;
-    height: 55px;
+    width: 11.25rem;
+    height: 3.438rem;
     background-color: #004E98;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    box-shadow: 0 4px 12px rgba(31, 29, 29, 0.3);
+    box-shadow: 0 0.3rem 0.8rem rgba(31, 29, 29, 0.3);
     cursor: pointer;
 `;

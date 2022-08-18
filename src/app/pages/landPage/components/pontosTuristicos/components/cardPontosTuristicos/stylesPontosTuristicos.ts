@@ -1,29 +1,29 @@
 import styled from "styled-components";
 
 export const ContainerPontosTuristicos = styled.div`
-    width: 640px;
-    margin-top: 20px;
+    width: 40rem;
+    margin-top: 2.5rem;
     .titulo{
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         color: #1F1D1D;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
     .container-img-texto{
-        width: 640px;
-        height: 250px;
+        width: 40rem;
+        height: 15.625rem;
         background-color: #3A6EA5;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border-radius: 20px;
+        border-radius: 2.5rem;
     }
     .texto-pontoTuristico{
-        width: 310px;
-        height: 135px;
+        width: 19.375rem;
+        height: 8.438rem;
         color: #FFFFFF;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 500;
     }
 `;
