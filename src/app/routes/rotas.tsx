@@ -1,6 +1,8 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Cadastro } from "../pages/cadastro"
 import { LandPage } from "../pages/landPage"
+import { Login } from "../pages/login"
 
 
 export const Rotas = ({ children }: any) =>{
@@ -9,6 +11,8 @@ export const Rotas = ({ children }: any) =>{
             {children}
             <Routes>
                 <Route path="/" element={<LandPage />}/>
+                <Route path="/login" element={<Login />}/>
+                <Route path="/cadastro" element={<Cadastro />}/>
             </Routes>
         </BrowserRouter>
     )

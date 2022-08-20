@@ -12,7 +12,7 @@ import { ContainerLandPage } from "./styleLandPage"
 export const LandPage = ()=>{
     return(
         <ContainerLandPage>
-            <Carrossel />
+            <Header />
         </ContainerLandPage>
     )
 }
