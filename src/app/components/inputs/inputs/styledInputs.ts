@@ -7,8 +7,8 @@ export const ContainerInput = styled.div`
     .label{
         font-size: 1.125rem;
         font-weight: 500;
-        color: #000000;
-        margin-bottom: 8px;
+        color: #FFFFFFFF;
+        margin: 0.8rem 0 ;
         :first-letter{
             text-transform: uppercase;
         }
@@ -21,12 +21,18 @@ export const ContainerInput = styled.div`
         background-color: #F2F2F2;
         font-size: 1.125rem;
         padding: 0 0.3rem;
-        :active{
-            border: 0.125rem solid #000000;
+        :focus{
+            ::placeholder{
+                color: rgba(0, 0, 0, 0.5);
+            }
+            border: 0.125rem solid rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 0 0;
+            outline: 0;
         }
         ::placeholder{
             color: rgba(255, 103, 0, 0.6);
         }
+
     }
     .input[type="date"]{
         color: rgba(255, 103, 0, 0.6);
