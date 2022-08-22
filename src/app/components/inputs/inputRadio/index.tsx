@@ -22,19 +22,19 @@ export const InputRadio:React.FC<InputRadioProps> = (props) =>{
             <h4 className="titulo">Genero:</h4>
             <div className="container-label-input">
                 <input 
-                    className="input" 
-                    type="radio"
-                    checked={mulher}
-                    onChange={(e)=>mulherChecked(e)}
-                />
-                <label>mulher</label>
-                <input 
-                    className="input" 
+                    className="input-radio" 
                     type="radio"
                     checked={homem}
                     onChange={(e)=>homemChecked(e)}
                 />
-                <label>homem</label>
+                <label className="label-inputRadio">Homem</label>
+                <input 
+                    className="input-radio" 
+                    type="radio"
+                    checked={mulher}
+                    onChange={(e)=>mulherChecked(e)}
+                />
+                <label className="label-inputRadio">Mulher</label>
             </div>
         </ContainerRadioInput>
     )
