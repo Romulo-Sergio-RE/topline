@@ -7,7 +7,15 @@ export const ContainerHeader = styled.div`
     box-shadow:  0 0.25rem 0.938rem rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    .teste{
+        width: 43.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 0 0 1.875rem;
+    }
     .titulo{
         font-size: 2rem;
         font-weight: 700;
@@ -16,5 +24,11 @@ export const ContainerHeader = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+    .icon-voltar{
+        color: #FF6700;
+        cursor: pointer;
+        text-decoration: none;
     }
 `;

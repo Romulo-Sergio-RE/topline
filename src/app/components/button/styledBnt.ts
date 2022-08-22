@@ -9,6 +9,7 @@ export const ContainerBnt = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2rem 0 0 0;
     cursor: pointer;
     .titulo-button{
         font-size: 1.2rem;

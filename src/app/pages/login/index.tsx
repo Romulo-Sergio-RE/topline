@@ -4,10 +4,11 @@ import { HeaderLoginCadastro } from "../../components/headerLoginCadastro"
 import { Inputs } from "../../components/inputs/inputs"
 import { Container } from "./styledPageLogin"
 
-export const  Login = () =>{
+export const Login = () =>{
 
-    const [dados, setDados] = useState("")
-    console.log(dados)
+    const [email, setEmail] = useState("")
+    const [senha, setSenha] = useState("")
+
     return(
         <div>
             <HeaderLoginCadastro />
@@ -20,15 +21,15 @@ export const  Login = () =>{
                             label="email:" 
                             inputType="text"
                             placeholder="Digite seu email"
-                            value={dados}
-                            onChange={setDados}
+                            value={email}
+                            onChange={setEmail}
                         />
                         <Inputs 
                             label="Senha:" 
                             inputType="text"
                             placeholder="Digite sua Senha"
-                            value={dados}
-                            onChange={setDados}
+                            value={senha}
+                            onChange={setSenha}
                         />
                     </div>
                     <ButtonPrimary 
