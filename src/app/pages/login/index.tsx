@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ButtonPrimary } from "../../components/button"
 import { HeaderLoginCadastro } from "../../components/headerLoginCadastro"
@@ -11,9 +11,8 @@ export const Login = () =>{
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const {login} = useContext(AuthContext);
-
     const navigate = useNavigate()
-    
+
     const logarNoAplicativo = ()=>{
         const usuariologado = login(email,senha);
         if(usuariologado){

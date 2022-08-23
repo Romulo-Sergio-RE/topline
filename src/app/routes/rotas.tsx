@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Cadastro } from "../pages/cadastro"
 import { HomePage } from "../pages/homePage"

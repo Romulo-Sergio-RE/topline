@@ -16,10 +16,10 @@ export const Cadastro =() =>{
 
     const navigate = useNavigate()
 
-    const cadastrarUsuario = () =>{
+    const cadastrarUsuario = async() =>{
         if(senha === senhaNovamente){
-            const usuarioCadastrado = cadastro(email,senha)
-            if(usuarioCadastrado){
+            const usuarioCadastrado = cadastro(email,senha,nome)
+            if(await usuarioCadastrado){
                 navigate("/login")
             }else{
                 alert("alguma coisa deu errado")
