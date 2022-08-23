@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { ButtonPrimary } from "../../components/button"
 import { HeaderLoginCadastro } from "../../components/headerLoginCadastro"
 import { Inputs } from "../../components/inputs/inputs"
+import { AuthContext } from "../../context/authContext"
 import { Container } from "./styledPageCadastro"
 
 export const Cadastro =() =>{
@@ -10,7 +12,21 @@ export const Cadastro =() =>{
     const [senha, setSenha] = useState("")
     const [senhaNovamente, setSenhaNovamente] = useState("")
 
-    
+    const {cadastro} = useContext(AuthContext)
+
+    const navigate = useNavigate()
+
+    const cadastrarUsuario = () =>{
+        if(senha === senhaNovamente){
+            const usuarioCadastrado = cadastro(email,senha)
+            if(usuarioCadastrado){
+                navigate("/login")
+            }else{
+                alert("alguma coisa deu errado")
+            }
+        }
+    }
+
     return(
         <div>
             <HeaderLoginCadastro /> 
@@ -48,7 +64,7 @@ export const Cadastro =() =>{
                     />     
                     <ButtonPrimary 
                         titulo="Cadastrar"
-                        onClick={()=>alert("cadastro com sucesso")}
+                        onClick={cadastrarUsuario}
                     />
                 </div>
             </Container>

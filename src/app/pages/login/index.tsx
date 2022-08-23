@@ -1,14 +1,27 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { ButtonPrimary } from "../../components/button"
 import { HeaderLoginCadastro } from "../../components/headerLoginCadastro"
 import { Inputs } from "../../components/inputs/inputs"
+import { AuthContext } from "../../context/authContext"
 import { Container } from "./styledPageLogin"
 
 export const Login = () =>{
 
-    const [email, setEmail] = useState("")
-    const [senha, setSenha] = useState("")
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const {login} = useContext(AuthContext);
 
+    const navigate = useNavigate()
+    
+    const logarNoAplicativo = ()=>{
+        const usuariologado = login(email,senha);
+        if(usuariologado){
+            navigate("/home")
+        }else{
+            alert("alguma coisa deu errado")
+        }
+    }
     return(
         <div>
             <HeaderLoginCadastro />
@@ -34,7 +47,7 @@ export const Login = () =>{
                     </div>
                     <ButtonPrimary 
                         titulo="entrar"
-                        onClick={()=>alert("login com sucesso")}
+                        onClick={logarNoAplicativo}
                     />
                     <p className="naoConta-cadastro">Nao tem um conta?<a href="/cadastro">Cadastrar</a></p>
                 </div>

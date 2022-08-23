@@ -1,12 +1,15 @@
 import React from 'react';
+import { AuthProvider } from './context/authProvider';
 import { GlobalStyles } from './GlobalStyled';
 import { Rotas } from './routes/rotas';
 
 function App() {
   return (
-    <Rotas>
-      <GlobalStyles />
-    </Rotas>
+    <AuthProvider>
+      <Rotas>
+        <GlobalStyles />
+      </Rotas>
+    </AuthProvider>
   );
 }
 
