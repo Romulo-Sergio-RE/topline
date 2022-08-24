@@ -5,6 +5,7 @@ export const CardCarrossel = () =>{
         <ContainerCardCarrossel>
             <div className="container">
                 <img 
+                    className="imagem-carrossel"
                     alt="imaga-card"
                     src={require("../../image/imagemCarrossel.png")}
                 />

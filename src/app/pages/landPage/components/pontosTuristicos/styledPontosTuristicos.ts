@@ -14,4 +14,13 @@ export const ContainerPontosTuristicos = styled.div`
         justify-content: space-around;
         margin-top: 2.5rem;
     }
+    @media only screen and ( max-width:700px){
+        .grid-ponto-turisticos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
 `;

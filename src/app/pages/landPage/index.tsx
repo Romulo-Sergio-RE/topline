@@ -17,6 +17,10 @@ export const LandPage = ()=>{
             <Servicos />
             <TopPaises />
             <MotivosViajar />
+            <PontosTuristico />
+            <Carrossel />
+            <CadastroLandPage />
+            <Footer />
         </ContainerLandPage>
     )
 }

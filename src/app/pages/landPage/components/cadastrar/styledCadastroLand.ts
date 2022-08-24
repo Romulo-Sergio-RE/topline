@@ -31,4 +31,23 @@ export const ContainerCadastro = styled.div`
         text-transform: uppercase;
         cursor: pointer;
     }
+    @media only screen and (max-width: 830px){
+        .texto{
+            width: 36rem;
+        }
+    }
+    @media only screen and (max-width: 600px){
+        .texto{
+            width: 30rem;
+        }
+    }
+    @media only screen and (max-width: 480px){
+        .texto{
+            width: 19rem;
+            font-size: 1.2rem;
+        }
+        .button{
+            width: 18rem;
+        }
+    }
 `;

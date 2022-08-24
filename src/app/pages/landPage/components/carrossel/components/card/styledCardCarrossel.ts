@@ -32,4 +32,50 @@ export const ContainerCardCarrossel = styled.div`
         font-weight: 400;
         color: #1F1D1D;
     }
+    @media only screen and (max-width:925px){
+        .container{
+            width: 46rem;
+        }
+    }
+    @media only screen and (max-width:768px){
+        .imagem-carrossel{
+            width: 15rem;
+            height: 15rem;
+        }
+        .container{
+            width: 30rem;
+            height: 30rem;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        .container-info{
+            width: 20rem;
+            height: 9.75rem;
+            text-align: center;
+        }
+        .container-info-titulo{
+            font-size: 1.625rem;
+            margin-bottom: 1.25rem;
+        }
+        .container-info-texto{
+            font-size: 1.1rem;
+            width: 21rem;
+        }
+    }
+    @media only screen and (max-width:480px){
+        .imagem-carrossel{
+            width: 12rem;
+            height: 12rem;
+        }
+        .container{
+            width: 20rem;
+            padding: 15px;
+        }
+        .container-info-texto{
+            font-size: 1rem;
+            width: 20rem;
+        }
+    }
 `;
