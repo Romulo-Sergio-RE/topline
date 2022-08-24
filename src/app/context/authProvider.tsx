@@ -6,22 +6,19 @@ import { User } from "../types/user"
 import { AuthContext } from "./authContext"
 
 export const AuthProvider = ({ children }:any)=>{
-    const [user, setUsers] = useState<User | any[]>([]);
-    const [listUsers, setListUsers]= useState<User | any[]>([]);
-    const test = ()=>{
-        onValue(ref(db, `/${auth.currentUser?.uid}/`), snapshot =>{
-            setListUsers([]);
-            const data = snapshot.val();
+    const [user, setUsers] = useState<User>(null!);
+
+    const test = async ()=>{
+        onValue(ref(db, `/${auth.currentUser?.uid}`), async snapshot =>{
+            const data = await snapshot.val();
+            console.log(data)
             if(data !== null){
-                Object.values(data).map(users => {
-                    setListUsers((oldArray: any) =>[...oldArray, users]);
-                })
+                setUsers(data)
             }
         })
     }
-    const login = (email: string, senha:string) =>{
-        setUsers(listUsers)
-        signInWithEmailAndPassword(auth, email, senha)
+    const login = async (email: string, senha:string) =>{
+        await signInWithEmailAndPassword(auth, email, senha)
             .then(()=>{
                 alert("login realizado com sucesso")
                 test()
@@ -30,7 +27,6 @@ export const AuthProvider = ({ children }:any)=>{
         return true
     }
     const cadastro = async (email: string, senha:string, nome:string) =>{
-
         await createUserWithEmailAndPassword(auth, email, senha)
             .then(async() => {
                 alert("cadastro realizado com sucesso")

@@ -13,8 +13,8 @@ export const Login = () =>{
     const {login} = useContext(AuthContext);
     const navigate = useNavigate()
 
-    const logarNoAplicativo = ()=>{
-        const usuariologado = login(email,senha);
+    const logarNoAplicativo = async()=>{
+        const usuariologado = await login(email,senha);
         if(usuariologado){
             navigate("/home")
         }else{

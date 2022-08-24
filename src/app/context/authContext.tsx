@@ -2,8 +2,8 @@ import { createContext } from "react";
 import { User } from "../types/user";
 
 type authContext ={
-    user: User | any ,
-    login: (email:string, senha:string) => boolean,
+    user: User | any,
+    login: (email:string, senha:string) => Promise<boolean>,
     cadastro: (email:string, senha:string,nome:string) => Promise<boolean>,
     deslogar: ()=>void;
 }
