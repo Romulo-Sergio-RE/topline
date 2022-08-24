@@ -8,6 +8,7 @@ export const MotivosViajar = () =>{
                 <img 
                     src={require("./image/motivo.png")} 
                     alt="img"
+                    className="imagem"
                 />
                 <div className="container-info-motivo">
                     <h4 className="titulo-motivo">Conhecer novas culturas</h4>

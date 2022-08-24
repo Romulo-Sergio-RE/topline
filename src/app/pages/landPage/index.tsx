@@ -13,6 +13,10 @@ export const LandPage = ()=>{
     return(
         <ContainerLandPage>
             <Header />
+            <Inicio />
+            <Servicos />
+            <TopPaises />
+            <MotivosViajar />
         </ContainerLandPage>
     )
 }

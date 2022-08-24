@@ -21,4 +21,17 @@ export const ContainerCard = styled.div`
         color: #FFFFFF;
         text-transform: uppercase;
     }
+    @media only screen and (max-width: 1225px) {
+        width: 16rem;
+        height: 18rem;
+        background-color: #3A6EA5;
+        border-radius: 1.563rem;
+    }
+    @media only screen and (max-width: 1050px) {
+        .image-card-topPaises{
+            width: 11rem;
+            height: 9rem;
+            border-radius: 0.625rem;
+        }
+    }
 `;

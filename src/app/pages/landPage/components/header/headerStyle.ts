@@ -23,4 +23,20 @@ export const Container = styled.div`
         justify-content:space-between;
         margin-right: 2.3rem;
     }
+    @media only screen and (max-width: 600px){
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        justify-content: center;
+        .logo-topline{
+            margin: 3.75rem 0 0.625rem 0;
+        }
+        .button-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction:column;
+            margin: 0 0 0.625rem 0;
+        }
+    }
 `;

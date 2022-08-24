@@ -14,4 +14,20 @@ export const ContainerTopPaises = styled.div`
         align-items: center;
         justify-content: space-around;
     }
+
+    @media only screen and (max-width: 1050px) {
+        .grid-card-TopPaises{
+            display: grid;
+            grid-template-columns:  auto auto;
+            row-gap: 40px;
+        }
+    }  
+    @media only screen and (max-width: 600px) {
+        .grid-card-TopPaises{
+            display: flex;
+            align-items: center;
+            justify-content: space-around; 
+            flex-direction: column;
+        }
+    }   
 `;

@@ -12,4 +12,5 @@ export const ContainerBnt = styled.div`
     color: #FFFFFF;
     box-shadow: 0 0.3rem 0.8rem rgba(31, 29, 29, 0.3);
     cursor: pointer;
+    margin: 0 0 0.625rem 0;
 `;
