@@ -9,13 +9,10 @@ export const HeaderLoginCadastro = ()=>{
     }
     return(
         <ContainerHeader>
-            <div className="teste">
-                <a href="/"className="icon-voltar">voltar</a>
-                <h3 
-                    className="titulo"
-                    onClick={telaHome}
-                >TopLine</h3> 
-            </div>
+            <h3 
+                className="titulo"
+                onClick={telaHome}
+            >TopLine</h3> 
         </ContainerHeader>
     )
 }

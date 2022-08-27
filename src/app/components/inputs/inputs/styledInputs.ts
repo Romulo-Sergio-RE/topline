@@ -42,5 +42,17 @@ export const ContainerInput = styled.div`
         display: none;
         -webkit-appearance: none;
     }
-
+    @media only screen and (max-width: 480px){
+        .label{
+            font-size: 1rem;
+        }
+        .input{
+            width: 15rem;
+            height: 3rem;
+            ::placeholder{
+                font-size:1rem;
+            }
+        }
+        
+    }
 `;

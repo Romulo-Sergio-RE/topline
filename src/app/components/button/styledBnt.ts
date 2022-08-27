@@ -17,4 +17,11 @@ export const ContainerBnt = styled.div`
         color: #F2F2F2;
         text-transform: uppercase;
     }
+    @media only screen and (max-width: 480px){
+        width: 15rem;
+        height: 3.5rem;
+        .titulo-button{
+            font-size: 1.1rem;
+        }
+    }
 `;

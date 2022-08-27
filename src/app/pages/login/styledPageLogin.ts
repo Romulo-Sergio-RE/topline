@@ -38,4 +38,16 @@ export const Container = styled.div`
             }
         }
     }
+    @media only screen and (max-width: 480px){
+        .container-inputs{
+            width: 19rem;
+            height: 23rem ;
+        }
+        .naoConta-cadastro{
+            font-size: 0.9rem;
+            a{
+                font-size: 1.1rem;
+            }
+        }
+    }
 `;

@@ -24,4 +24,10 @@ export const Container = styled.div`
         flex-direction: column;
         margin: 0  0 1.563rem 0;
     }
+    @media only screen and (max-width: 480px){
+        .container-inputs{
+            width: 19rem;
+            height: 35rem;
+        }
+    }
 `;

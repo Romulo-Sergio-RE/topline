@@ -1,27 +1,16 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
-import { onValue, ref, set } from "firebase/database";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { useState } from "react"
-import { auth, db } from "../service/apiFireBase";
+import { auth } from "../service/apiFireBase";
 import { User } from "../types/user"
 import { AuthContext } from "./authContext"
 
 export const AuthProvider = ({ children }:any)=>{
     const [user, setUsers] = useState<User>(null!);
 
-    const test = async ()=>{
-        onValue(ref(db, `/${auth.currentUser?.uid}`), async snapshot =>{
-            const data = await snapshot.val();
-            console.log(data)
-            if(data !== null){
-                setUsers(data)
-            }
-        })
-    }
     const login = async (email: string, senha:string) =>{
         await signInWithEmailAndPassword(auth, email, senha)
             .then(()=>{
                 alert("login realizado com sucesso")
-                test()
             })
             .catch((err) => alert(err.message))      
         return true
@@ -30,12 +19,6 @@ export const AuthProvider = ({ children }:any)=>{
         await createUserWithEmailAndPassword(auth, email, senha)
             .then(async() => {
                 alert("cadastro realizado com sucesso")
-                await set(ref(db, `/${auth.currentUser?.uid}/${0}`),{
-                    email: email, 
-                    senha:senha, 
-                    nome:nome,
-                    uid: 0,
-                });
             })
             .catch(() => {return false})
         return true
