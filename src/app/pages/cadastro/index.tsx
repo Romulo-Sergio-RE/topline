@@ -50,14 +50,14 @@ export const Cadastro =() =>{
                     />
                     <Inputs 
                         label="Senha:" 
-                        inputType="text"
+                        inputType="password"
                         placeholder="Digite sua senha"
                         value={senha}
                         onChange={setSenha}
                     />
                     <Inputs 
                         label="Senha Novamente:" 
-                        inputType="text"
+                        inputType="password"
                         placeholder="Digite sua Senha Novamente"
                         value={senhaNovamente}
                         onChange={setSenhaNovamente}

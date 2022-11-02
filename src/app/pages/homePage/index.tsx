@@ -12,12 +12,10 @@ export const HomePage = ()=>{
         deslogar()
         navigate("/")
     }
-    console.log(user[0].email)
+
     return(
         <div>
-            homePage
-            <div>bem vindo{user[1].email}</div>
-
+            <div>bem vindo</div>
             <button onClick={handleOut}>sair</button>
         </div>
     )

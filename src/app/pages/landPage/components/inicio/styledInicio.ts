@@ -38,7 +38,7 @@ export const ContainerInicio = styled.div`
             font-size: 1.5rem;
             font-weight: 700;
             line-height: 140%;
-            color: #000000; 
+            color:  #004E98; 
         }
         .imagem-inicio{
             width: 35rem;
@@ -59,7 +59,7 @@ export const ContainerInicio = styled.div`
             font-size: 1.5rem;
             font-weight: 700;
             line-height: 140%;
-            color: #000000; 
+            color:  #004E98; 
         } 
         .imagem-inicio{
             width: 25rem;
@@ -75,7 +75,7 @@ export const ContainerInicio = styled.div`
             font-size: 1.5rem;
             font-weight: 700;
             line-height: 140%;
-            color: red; 
+            color:  #004E98; 
         } 
         .imagem-inicio{
             width: 25rem;
@@ -97,7 +97,7 @@ export const ContainerInicio = styled.div`
             font-size: 1.5rem;
             font-weight: 700;
             line-height: 140%;
-            color: red; 
+            color:  #004E98; 
         } 
         .imagem-inicio{
             width: 25rem;

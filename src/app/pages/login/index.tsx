@@ -38,7 +38,7 @@ export const Login = () =>{
                         />
                         <Inputs 
                             label="Senha:" 
-                            inputType="text"
+                            inputType="password"
                             placeholder="Digite sua Senha"
                             value={senha}
                             onChange={setSenha}
