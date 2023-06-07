@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import { QuerySizeType, QueryKeyBreakpointsType } from 'constants/theme';
+import { QuerySizeType, QueryKeyBreakpointsType } from "../constants/theme";
 
-import { formatBreakpoint } from 'utils';
+import { formatBreakpoint } from "../utils/formatBreakpoint";
 
 function useMediaQuery(
   query: QuerySizeType,
-  key: QueryKeyBreakpointsType = 'down'
+  key: QueryKeyBreakpointsType = "down"
 ) {
   const queryFormatted = formatBreakpoint(key, query);
 
@@ -20,9 +20,9 @@ function useMediaQuery(
     const matchQueryList = window.matchMedia(queryFormatted);
     setMatches(matchQueryList.matches);
 
-    matchQueryList.addEventListener('change', handleChange);
+    matchQueryList.addEventListener("change", handleChange);
     return () => {
-      matchQueryList.removeEventListener('change', handleChange);
+      matchQueryList.removeEventListener("change", handleChange);
     };
   }, [query]);
   return matches;

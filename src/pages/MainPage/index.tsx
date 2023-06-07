@@ -1,5 +1,7 @@
 import { MainPagePropsType } from './types';
 import * as S from './styles';
+import FirstSection from '../../templates/FirstSection';
+import FourthSection from '../../templates/FourthSection';
 
 const MainPage: React.FC<MainPagePropsType> = ({
   children,
@@ -8,7 +10,7 @@ const MainPage: React.FC<MainPagePropsType> = ({
 }) => {
   return (
     <S.Container {...rest} ref={innerRef}>
-      {children}
+      <FourthSection />
     </S.Container>
   );
 };
