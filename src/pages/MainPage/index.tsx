@@ -5,6 +5,8 @@ import FourthSection from '../../templates/FourthSection';
 import SeventhSection from '../../templates/SeventhSection';
 import SecondSection from '../../templates/SecondSection';
 import ThirdSection from '../../templates/ThirdSection';
+import FifthSection from '../../templates/FifthSection';
+import EighthSection from '../../templates/EighthSection';
 
 const MainPage: React.FC<MainPagePropsType> = ({
   children,
@@ -13,11 +15,13 @@ const MainPage: React.FC<MainPagePropsType> = ({
 }) => {
   return (
     <S.Container {...rest} ref={innerRef}>
-      <FirstSection />
+      {/* <FirstSection />
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-      <SeventhSection />
+      <FifthSection />
+      <SeventhSection /> */}
+      <EighthSection />
     </S.Container>
   );
 };
