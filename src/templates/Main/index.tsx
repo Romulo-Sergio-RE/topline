@@ -1,3 +1,4 @@
+import Header from "../../components/Header";
 import EighthSection from "./EighthSection";
 import FifthSection from "./FifthSection";
 import FirstSection from "./FirstSection";
@@ -10,6 +11,7 @@ import ThirdSection from "./ThirdSection";
 function Main() {
     return (
         <>
+            <Header />
             <FirstSection />
             <SecondSection />
             <ThirdSection />
