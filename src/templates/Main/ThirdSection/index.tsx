@@ -1,12 +1,12 @@
 import { ThirdSectionPropsType } from './types';
 import * as S from './styles';
-import CardSecondary from '../../components/Cards/CardSecondary';
+import CardSecondary from '../../../components/Cards/CardSecondary';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import { useMediaQuery } from '../../hooks';
+import { useMediaQuery } from '../../../hooks';
 
 const ThirdSection: React.FC<ThirdSectionPropsType> = ({
   children,
@@ -19,22 +19,22 @@ const ThirdSection: React.FC<ThirdSectionPropsType> = ({
   const arrayInfoCard = [
     {
       "id": 0,
-      "imgFlags": require("../../assets/image/japao.png"),
+      "imgFlags": require("../../../assets/image/japao.png"),
       "title": "Japao",
     },
     {
       "id": 1,
-      "imgFlags": require("../../assets/image/canada.png"),
+      "imgFlags": require("../../../assets/image/canada.png"),
       "title": "Canada",
     },
     {
       "id": 2,
-      "imgFlags": require("../../assets/image/coreia.png"),
+      "imgFlags": require("../../../assets/image/coreia.png"),
       "title": "Coreia",
     },
     {
       "id": 3,
-      "imgFlags": require("../../assets/image/alemanha.png"),
+      "imgFlags": require("../../../assets/image/alemanha.png"),
       "title": "Alemanha",
     },
   ]

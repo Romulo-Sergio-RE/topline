@@ -39,7 +39,7 @@ const FourthSection: React.FC<FourthSectionPropsType> = ({
       <S.ContainerContent>
         <S.ContainerImg
           alt=""
-          src={require("../../assets/image/ImgReasonsToTravel.png")}
+          src={require("../../../assets/image/ImgReasonsToTravel.png")}
         />
         <S.ContainerInfo>{readArrayInfo()}</S.ContainerInfo>
       </S.ContainerContent>

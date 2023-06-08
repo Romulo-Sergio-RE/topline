@@ -57,8 +57,8 @@ const EighthSection: React.FC<EighthSectionPropsType> = ({
       <S.TitleLogo>TopLine</S.TitleLogo>
       {readArrayFooter()}
       <S.ContainerImg>
-        <S.ImgAppMobile alt="" src={require("../../assets/image/IconGooglePlay.png")} />
-        <S.ImgAppMobile alt="" src={require("../../assets/image/IconAppStore.png")} />
+        <S.ImgAppMobile alt="" src={require("../../../assets/image/IconGooglePlay.png")} />
+        <S.ImgAppMobile alt="" src={require("../../../assets/image/IconAppStore.png")} />
       </S.ContainerImg>
     </S.Container>
   );

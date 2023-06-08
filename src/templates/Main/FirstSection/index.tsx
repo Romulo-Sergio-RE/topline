@@ -10,7 +10,7 @@ const FirstSection: React.FC<FirstSectionPropsType> = ({
     <S.Container {...rest} ref={innerRef}>
       <S.ContainerImage
         alt=''
-        src={require("../../assets/image/ImgAdventure.png")}
+        src={require("../../../assets/image/ImgAdventure.png")}
       />
       <S.ContainerText>
         A TopLine vai ajudar a criar seus roteiros de forma mais simples e

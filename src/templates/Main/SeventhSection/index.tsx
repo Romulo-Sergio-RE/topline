@@ -1,6 +1,6 @@
 import { SeventhSectionPropsType } from './types';
 import * as S from './styles';
-import Button from '../../components/Button';
+import Button from '../../../components/Button';
 
 const SeventhSection: React.FC<SeventhSectionPropsType> = ({
   children,

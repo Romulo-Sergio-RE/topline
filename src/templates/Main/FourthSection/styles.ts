@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { formatBreakpoint } from "../../utils";
+import { formatBreakpoint } from "../../../utils";
 
 export const Container = styled.div`
   display: flex;

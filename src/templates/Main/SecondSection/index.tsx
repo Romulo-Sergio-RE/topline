@@ -1,13 +1,11 @@
 import { SecondSectionPropsType } from './types';
 import * as S from './styles';
-import CardPrimary from '../../components/Cards/CardPrimary';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import { useMediaQuery } from '../../hooks';
-
-
+import { useMediaQuery } from '../../../hooks';
+import CardPrimary from '../../../components/Cards/CardPrimary';
 
 const SecondSection: React.FC<SecondSectionPropsType> = ({
   children,
@@ -20,22 +18,22 @@ const SecondSection: React.FC<SecondSectionPropsType> = ({
   const arrayInfoCard = [
     {
       "id": 0,
-      "imgCard": require("../../assets/image/IconRoad.png"),
+      "imgCard": require("../../../assets/image/IconRoad.png"),
       "text": "Encontrar informações sobre os pontos turísticos",
     },
     {
       "id": 1,
-      "imgCard": require("../../assets/image/IconPlane.png"),
+      "imgCard": require("../../../assets/image/IconPlane.png"),
       "text": "Encontrar informações sobre os pontos turísticos",
     },
     {
       "id": 2,
-      "imgCard": require("../../assets/image/IconEarth.png"),
+      "imgCard": require("../../../assets/image/IconEarth.png"),
       "text": "Conseguir ter informações sobre os países, como eventos, culturais e pontos turísticos",
     },
     {
       "id": 3,
-      "imgCard": require("../../assets/image/IconDocument.png"),
+      "imgCard": require("../../../assets/image/IconDocument.png"),
       "text": "Consegue encontrar e usar os roteiros criados por outras pessoas.",
     },
   ]
@@ -80,8 +78,6 @@ const SecondSection: React.FC<SecondSectionPropsType> = ({
           {readArray()}
         </S.ContainerWeb>
       }
-
-
     </S.Container>
   );
 };
