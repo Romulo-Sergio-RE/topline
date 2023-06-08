@@ -1,5 +1,6 @@
 import { RegisterPagePropsType } from './types';
 import * as S from './styles';
+import Register from '../../templates/Register';
 
 const RegisterPage: React.FC<RegisterPagePropsType> = ({
   children,
@@ -8,7 +9,7 @@ const RegisterPage: React.FC<RegisterPagePropsType> = ({
 }) => {
   return (
     <S.Container {...rest} ref={innerRef}>
-      Resgiter
+      <Register />
     </S.Container>
   );
 };

@@ -72,7 +72,7 @@ export const ContainerInternal = styled.div`
     .nav__menuOpen {
       align-items: center;
       justify-content: end;
-      height: 60px;
+      height: 70px;
       .link {
         display: block;
         color: #fff;
@@ -97,10 +97,10 @@ export const ContainerInternal = styled.div`
 `;
 export const Logo = styled.div`
   position: absolute;
-  top: 10px;
-  left: 40%;
+  top: 5px;
+  left: 37%;
   color: ${(props) => props.theme.colors.white};
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   padding: 10px 0;
   @media ${formatBreakpoint("up", "mobile")} {

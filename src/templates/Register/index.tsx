@@ -1,10 +1,10 @@
-import { LoginPropsType } from './types';
+import { RegisterPropsType } from './types';
 import * as S from './styles';
-import FirstSection from './FirstSection';
-import { BsArrowLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
+import FirstSection from './FirstSection';
 
-const Login: React.FC<LoginPropsType> = ({
+const Register: React.FC<RegisterPropsType> = ({
   children,
   innerRef,
   ...rest
@@ -22,4 +22,4 @@ const Login: React.FC<LoginPropsType> = ({
   );
 };
 
-export default Login;
+export default Register;

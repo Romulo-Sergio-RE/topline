@@ -1,5 +1,7 @@
 import { LoginPagePropsType } from './types';
 import * as S from './styles';
+import Login from '../../templates/Login';
+
 
 const LoginPage: React.FC<LoginPagePropsType> = ({
   children,
@@ -8,7 +10,7 @@ const LoginPage: React.FC<LoginPagePropsType> = ({
 }) => {
   return (
     <S.Container {...rest} ref={innerRef}>
-      Login
+      <Login />
     </S.Container>
   );
 };
