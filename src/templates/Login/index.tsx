@@ -1,8 +1,8 @@
 import { LoginPropsType } from './types';
 import * as S from './styles';
 import FirstSection from './FirstSection';
-import { BsArrowLeft } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
 
 const Login: React.FC<LoginPropsType> = ({
   children,
