@@ -2,6 +2,8 @@ import { FirstSectionPropsType } from './types';
 import * as S from './styles';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useAuth } from '../../../context/authProvider';
+import Button from '../../../components/Button';
+import { Link } from 'react-router-dom';
 
 type Inputs = {
   email: string,
@@ -57,9 +59,16 @@ const FirstSection: React.FC<FirstSectionPropsType> = ({
           />
           {errors.passwordAgain && <span>{errors.passwordAgain?.message}</span>}
         </S.ContentLabelInput>
-        <S.Button>
-          Entrar
-        </S.Button>
+
+        <Link to={"/cadastrar"} >
+          <Button
+            widthBtn='290px'
+            heightBtn='50px'
+            backColor={"#FF6700"}
+            fontColor={"#ffff"}
+            title='Cadastar'
+          />
+        </Link>
       </S.ContainerContent>
     </S.Container>
   );
